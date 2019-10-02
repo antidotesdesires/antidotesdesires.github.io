@@ -6,104 +6,110 @@
 
 <style>
 
+	a.nounderline {text-decoration: none; }
 
-body {
-	background-image: url('bgimg.jpg');
-	height: 100%;
+
+.container {
+	background-image: "bgimg.png";
 	background-position: center;
-	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain;
 	position: relative;
 	color: currentColor;
-	font-family: Knewave;
-	font-size: 25px;
+	font-size: 100%;
 }
 
 .topcenter {
-	top: ;
-	left: ;
-	height: 284px;
-	width: 629px; 
-	position: fixed;
-	x = 458
-	y = 199
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	position: relative;
+	text-align: center;
 	color: white;
 	font-family: Knewave;
-	font-size: 125px
-	###
-
-	position: absolute;
-		left: 700px;
-		top: 506px;
-		transform: rotate(0deg);
-		transform-origin: left;
-		overflow: visible;
-		width: 137px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Knewave;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 28px;
-		color: rgba(255,255,255,1);
-	}
+	font-size: 50px;
 }
 
 .topleft {
-	position: absolute;
+	position: relative;
 	top: 0%;
 	left: 16px;
 }
 
-.topright {
-	position: absolute;
-	top: 0%
-	right: 16px;	
-}
 
 .middleright {
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	text-align: center;
 	font-family: Knewave;
-	font-size: ##
+	font-size: 25px;
 }
 
 .footer {
-	position: fixed;
-	top: 50%;
-	left: 50%;
+	position: relative;
+	top: 0;
+	left: 16px;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-family: Knewave;
-	font-size: 25px
+	color: black
+	font-size: 30px;
+}
+
+
+.footer2 {
+	position: relative;
+	top: 0;
+	left: 16px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Knewave;
+	color: black
+	font-size: 30px;
+}
+
+
+.footer3 {
+	position: relative;
+	top: 0;
+	left: 16px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Knewave;
+	color: white
+	font-size: 30px;
 }
 
 </style>
 
 <body>
 
-<div class="bgimg">
-  <div class="topcenter">
-  	<p>
-  	<a href="http://www.antidotesdesires.com"> Antidotes </a>
-  	<a href="http://www.antidotesdesires.com"> Desires </a>
-  	</p>
+<div class="container">
+	<img src="bgimg.png" alt="antidotesdesires" width="100%">
+  <div class="topcenter" style="position: absolute; top:85px; left:505px; width:170px; height:25px">
+  	<a href="http://www.antidotesdesires.com" style="color: white" class="nounderline"><h1>ANTIDOTES</h1></a>
+  <div class="topcenter" style="position: absolute; top:125px; left:128px; width:170px; height:25px">
+  	<a href="http://www.antidotesdesires.com" style="color: white" class="nounderline"><h1>DESIRES</h1></a></div>
   </div>
-  <div class="middleright">
+
+<div class="middleright" style="position: absolute; top: 1170px; left: 1060px;">
 	<p>
-	<a href="http://www.antidotesdesires.com/desirex" target="_blank"> Desire X </a>
+	<a href="http://www.antidotesdesires.com/desirex" style="color: white" target="_blank" class="nounderline"> Desire X </a>
 	</p>
+</div>
 
-<nav>
-  <footer>
-  	<p> © Antidotes + Desires | 2019 </br>
-  	<a href="malito:info@antidotesdesires.com" target="_blank"> info@antidotesdesires.com </br> <a href="http://www.instagram.com/antidotesdesires" target="_blank"> <img src="###"> | IG </a>
-  	</p>
-  </footer>
-</nav>
+<div class="footer" style="position: absolute; top: 1535px; left: 130px;">
+  	<p>Antidotes + Desires © 2019 </p>
+</div>
 
+<div class="footer2" style="position: absolute; top: 1560px; left: 1050px;">
+  	<a href="malito:info@antidotesdesires.com" style="color: black" target="_blank" class="nounderline"> info@antidotesdesires.com
+
+<div class="footer3" style="position: relative; top: -8px; left: 250px;">
+	<a href="http://www.instagram.com/antidotesdesires" style="color: white" target="_blank"> <img src="igicon.png"></a>
 </div>
 
 </body>
